@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicacy Organic – Boutique bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Michroma&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav">
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="/" class="logo" aria-label="NatureShop, accueil">
+        <img src="./images/logo.png" alt="" width="40" height="40">
+        <span>Nature<small>Shop</small></span>
+      </a>
+
+      <nav id="menu" class="menu" aria-label="Navigation principale">
+        <a href="/" class="active">Accueil</a>
+        <a href="#popular">Catalogue</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">À propos</a>
+      </nav>
+
+      <form class="search" role="search" onsubmit="return false">
+        <input type="search" placeholder="Rechercher un produit" aria-label="Rechercher un produit">
+        <button type="submit" aria-label="Lancer la recherche">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </button>
+      </form>
+
+      <div class="actions">
+        <a href="#" class="cart" aria-label="Panier, 0 article">
+          <img src="./images/cart.svg" alt="" width="26" height="26">
+          <span id="cartCount">0</span>
+        </a>
+
+        <div class="account">
+          <button class="account-btn" id="accountBtn" aria-haspopup="true" aria-expanded="false"
+            aria-controls="dropdown">
+            <img src="./images/profil.png" class="avatar" alt="" width="44" height="44">
+            <span class="name">
+              <strong>Karl JIKSON</strong>
+              <span class="verified"><img src="./images/verified.png" alt="" width="14" height="14">Vérifié</span>
+            </span>
+            <img src="./images/down_arrow.svg" class="chev" alt="" width="22" height="22">
+          </button>
+          <ul class="dropdown" id="dropdown" hidden>
+            <li><a href="#">Mon profil</a></li>
+            <li><a href="#">Mes commandes</a></li>
+            <li><a href="#">Mes favoris</a></li>
+            <li><a href="#" class="logout">
+                <img src="./images/logout.svg" alt="" width="22" height="22">
+                <span>Se déconnecter</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="hx" id="hero" aria-labelledby="hx-title">
+      <div class="hx-bg" aria-hidden="true">
+        <i class="hx-leaf l1">🌿</i><i class="hx-leaf l2">🍃</i><i class="hx-leaf l3">🌿</i>
+      </div>
+
+      <div class="container hx-in">
+        <div class="hx-copy">
+          <p class="hx-kicker hx-r" style="--d:0">Fermes certifiées bio, livrées chez vous</p>
+          <h1 id="hx-title" class="hx-title" data-split>Choisissez le meilleur chemin vers une vie saine</h1>
+          <p class="hx-lead hx-r" style="--d:6">Fruits, légumes et épices cueillis cette semaine, sans intermédiaire.
+            Commandez avant midi, recevez dans la journée.</p>
+          <div class="hx-cta hx-r" style="--d:7">
+            <a href="#best" class="btn btn-green hx-btn">Voir les meilleures ventes</a>
+            <a href="#about" class="btn hx-ghost">Nos agriculteurs</a>
+          </div>
+          <ul class="hx-proof hx-r" style="--d:8">
+            <li><b data-count="1800">0</b> clients satisfaits</li>
+            <li><b data-count="362">0</b> produits frais</li>
+          </ul>
+        </div>
+
+        <div class="hx-visual hx-r" style="--d:2" aria-hidden="true">
+          <div class="hx-ring"></div>
+          <div class="hx-blob"><span class="hx-main"><img src="./images/hero-image.png" alt="fruits"></span></div>
+
+          <div class="hx-fruit" style="--depth:34; --x:-70%;  --y:0%;  --s:4.4rem"><span style="--t:6s"> <img
+                src="./images/tomate.png" width="200" alt="tomate"></span></div>
+          <div class="hx-fruit" style="--depth:-26; --x:120%; --y:-10%;  --s:3.6rem"><span
+              style="--t:7s; animation-delay:-2s"> <img src="./images/carotte.png" width="200" alt="carotte"></span>
+          </div>
+          <div class="hx-fruit" style="--depth:46; --x:110%; --y:70%; --s:4.6rem"><span
+              style="--t:5.5s; animation-delay:-1s"><img src="./images/orange.png" width="200" alt="orange"></span>
+          </div>
+          <div class="hx-fruit" style="--depth:-38; --x:-60%;  --y:70%; --s:3.8rem"><span
+              style="--t:6.5s; animation-delay:-3s"><img src="./images/chou.png" width="200" alt="chou"></span></div>
+
+          <span class="hx-badge">-25%</span>
+          <div class="hx-chip c1"><span><img src="./images/camion-liveur.png" width="30" alt="camion-liveur"></span>
+            Livraison gratuite</div>
+          <div class="hx-chip c2"><span>★</span> 4,9/5 d'avis clients</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="container perks">
+      <div>
+        <div class="img">
+          <img src="./images/panier-emplete.png" alt="panier">
+        </div>
+        <div>🧺 Produits de la ferme bio</div>
+      </div>
+      <div>
+        <div class="img">
+          <img src="./images/panier-emplete.jpg" alt="panier">
+        </div>
+        <div>🚚 Livraison gratuite</div>
+      </div>
+      <div>
+        <div class="img">
+          <img src="./images/panier-emplete.png" alt="panier">
+        </div>
+        <div>🎁 Promo de la semaine</div>
+      </div>
+      <div>
+        <div class="img">
+          <img src="./images/panier-emplete.png" alt="panier">
+        </div>
+        <div>🏷️ -20% sur tous les légumes</div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="head">
+        <h2>Nos catégories <em>les plus populaires</em></h2><a href="#" class="btn btn-green sm">Tout voir</a>
+      </div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <section class="container banners">
+      <div class="banner b-green"><small>Jusqu'à 30% de remise</small>
+        <h3>Récolté dans nos jardins</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🥬</span>
+      </div>
+      <div class="banner b-lime"><small>Jusqu'à 20% de remise</small>
+        <h3>Changez votre régime</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🥗</span>
+      </div>
+      <div class="banner b-orange"><small>Naturel et frais</small>
+        <h3>Légumes 100% bio</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🧃</span>
+      </div>
+    </section>
+
+    <section class="container section" id="best">
+      <div class="head">
+        <h2>Meilleures ventes</h2>
+        <div class="arrows"><button id="prevB" aria-label="Précédent">←</button><button id="nextB"
+            aria-label="Suivant">→</button></div>
+      </div>
+      <div class="grid4" id="bestGrid"></div>
+    </section>
+
+    <section class="container about" id="about">
+      <div class="about-img">🥕🍅🥦</div>
+      <div>
+        <p class="kicker">À propos</p>
+        <h2>Nous travaillons avec des agriculteurs certifiés</h2>
+        <p>Organic Foods est une entreprise familiale qui fournit supermarchés et cafés en produits frais, aliments
+          biologiques, soins, cosmétiques et produits ménagers.</p>
+        <a href="#" class="btn btn-green">En savoir plus</a>
+      </div>
+    </section>
+
+    <section class="gray" id="popular">
+      <div class="container section">
+        <h2 class="center">Produits les plus populaires</h2>
+        <div class="tabs" id="tabs">
+          <button class="active" data-f="all">Tous</button><button data-f="Légumes">Légumes</button>
+          <button data-f="Viande">Viande</button><button data-f="Boissons">Boissons</button>
+        </div>
+        <div class="grid4" id="popGrid"></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-in">
+        <div><b data-n="1800">0</b>+<span>Clients satisfaits</span></div>
+        <div><b data-n="362">0</b>+<span>Produits actifs</span></div>
+        <div><b data-n="30">0</b>+<span>Catégories</span></div>
+        <div><b data-n="1800">0</b>+<span>Récompenses</span></div>
+      </div>
+    </section>
+
+    <section class="container section rv" id="avis" aria-labelledby="rv-title">
+      <div class="rv-side">
+        <p class="kicker">Avis clients</p>
+        <h2 id="rv-title">Pourquoi nos clients nous aiment</h2>
+
+        <div class="rv-score">
+          <div class="rv-big">4,9<small>/5</small></div>
+          <div>
+            <div class="rv-stars" role="img" aria-label="Note moyenne : 4,9 sur 5">★★★★★</div>
+            <p>Basé sur <b>1 800</b> avis vérifiés</p>
+          </div>
+        </div>
+
+        <ul class="rv-bars" aria-label="Répartition des notes">
+          <li style="--k:0"><span>5 ★</span><i style="--w:92%"></i><em>92 %</em></li>
+          <li style="--k:1"><span>4 ★</span><i style="--w:6%"></i><em>6 %</em></li>
+          <li style="--k:2"><span>3 ★</span><i style="--w:1%"></i><em>1 %</em></li>
+          <li style="--k:3"><span>2 ★</span><i style="--w:1%"></i><em>1 %</em></li>
+          <li style="--k:4"><span>1 ★</span><i style="--w:0%"></i><em>0 %</em></li>
+        </ul>
+      </div>
+
+      <div class="rv-wall" aria-label="Avis de nos clients">
+        <div class="rv-row" id="rvA"></div>
+        <div class="rv-row rev" id="rvB"></div>
+      </div>
+    </section>
+
+    <section class="container app" id="app">
+      <div class="ap-bg" aria-hidden="true"><i class="c1"></i><i class="c2"></i></div>
+
+      <div class="ap-copy">
+        <p class="ap-kicker ap-r" style="--d:0">Application mobile</p>
+        <h2 class="ap-r" style="--d:1">Vos produits frais, à portée de pouce</h2>
+        <p class="ap-lead ap-r" style="--d:2">Commandez en quelques secondes, où que vous soyez, et suivez votre
+          livraison en direct.</p>
+
+        <ul class="ap-perks ap-r" style="--d:3">
+          <li>Livraison gratuite dès la première commande</li>
+          <li>Promotions réservées aux utilisateurs de l'app</li>
+          <li>Réachat en un geste de vos paniers favoris</li>
+        </ul>
+
+        <div class="ap-stores ap-r" style="--d:4">
+          <a href="#" class="ap-store" aria-label="Télécharger sur l'App Store">
+            <i class="fab fa-apple" aria-hidden="true"></i>
+            <span><small>Télécharger sur</small><b>App Store</b></span>
+          </a>
+          <a href="#" class="ap-store" aria-label="Disponible sur Google Play">
+            <i class="fab fa-google-play" aria-hidden="true"></i>
+            <span><small>Disponible sur</small><b>Google Play</b></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="ap-visual ap-r" style="--d:2" aria-hidden="true">
+        <div class="ap-stage">
+
+          <!-- Connexion -->
+          <div class="ap-ph left">
+            <div class="ap-phone"><span class="ap-notch"></span>
+              <div class="ap-screen">
+                <div class="l-top">
+                  <div class="s-sb s-light"><b>9:41</b><span><i class="fa-solid fa-signal"></i><i
+                        class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-full"></i></span></div>
+                  <img class="l-logo" src="./images/logo.png" alt="">
+                  <p class="l-hi">Bon retour !</p>
+                  <p class="l-sub">Vos produits frais vous attendent</p>
+                </div>
+                <div class="l-sheet">
+                  <p class="l-t">Connexion</p>
+                  <div class="l-field on"><i class="fa-regular fa-envelope"></i><span>karl@exemple.com</span></div>
+                  <div class="l-field"><i class="fa-solid fa-lock"></i><span>••••••••</span><i
+                      class="fa-regular fa-eye end"></i></div>
+                  <p class="l-forgot">Mot de passe oublié ?</p>
+                  <div class="s-btn">Se connecter</div>
+                  <div class="l-or"><span>ou continuer avec</span></div>
+                  <div class="l-social"><i class="fab fa-google"></i><i class="fab fa-facebook-f"></i><i
+                      class="fab fa-apple"></i></div>
+                  <p class="l-new">Nouveau ? <b>Créer un compte</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produits -->
+          <div class="ap-ph main">
+            <div class="ap-phone"><span class="ap-notch"></span>
+              <div class="ap-screen">
+                <div class="s-sb"><b>9:41</b><span><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i
+                      class="fa-solid fa-battery-full"></i></span></div>
+                <div class="p-body">
+                  <div class="p-head">
+                    <div class="p-loc"><small>Livrer à</small><b><i class="fa-solid fa-location-dot"></i>Cotonou,
+                        Bénin</b></div>
+                    <img class="p-av" src="./images/profil.png" alt="">
+                  </div>
+                  <div class="p-search">
+                    <div class="p-input"><i class="fa-solid fa-magnifying-glass"></i>Rechercher un produit</div>
+                    <div class="p-filter"><i class="fa-solid fa-sliders"></i></div>
+                  </div>
+                  <div class="p-banner">
+                    <div><small>Offre de la semaine</small><b>Fruits frais<br>-25%</b><span>Commander</span></div>
+                    <img src="./images/orange.png" alt="">
+                  </div>
+                  <div class="p-chips"><span
+                      class="on">Tous</span><span>Fruits</span><span>Légumes</span><span>Épices</span></div>
+                  <div class="p-grid">
+                    <div class="p-card">
+                      <i class="p-heart fa-solid fa-heart"></i>
+                      <div class="p-img" style="background:#fff0ec"><img src="./images/tomate.png" alt=""></div>
+                      <b>Tomates bio</b><small>250 g</small>
+                      <div class="p-foot"><span class="p-price">7,99 €</span><i class="p-add fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                    <div class="p-card">
+                      <i class="p-heart off fa-solid fa-heart"></i>
+                      <div class="p-img" style="background:#fff3e0"><img src="./images/carotte.png" alt=""></div>
+                      <b>Carottes bio</b><small>500 g</small>
+                      <div class="p-foot"><span class="p-price">4,50 €</span><i class="p-add fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-nav">
+                  <i class="on fa-solid fa-house"></i><i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-bag-shopping"><b>2</b></i><i class="fa-regular fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paiement -->
+          <div class="ap-ph right">
+            <div class="ap-phone"><span class="ap-notch"></span>
+              <div class="ap-screen">
+                <div class="s-sb"><b>9:41</b><span><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i
+                      class="fa-solid fa-battery-full"></i></span></div>
+                <div class="c-top"><span class="c-back"><i class="fa-solid fa-chevron-left"></i></span>
+                  <p class="c-title">Paiement</p><span class="c-sp"></span>
+                </div>
+                <div class="c-body">
+                  <div class="c-card">
+                    <div class="c-row1"><span class="c-chip"></span><span class="c-brand"><i></i><i></i></span></div>
+                    <p class="c-num">•••• •••• •••• 4821</p>
+                    <div class="c-meta"><span>KARL JIKSON</span><span>12/28</span></div>
+                  </div>
+                  <div class="c-pills"><span class="on">Carte</span><span>Mobile Money</span><span>PayPal</span></div>
+                  <div class="c-order">
+                    <div class="c-items">
+                      <img src="./images/tomate.png" alt=""><img src="./images/carotte.png" alt=""><img
+                        src="./images/chou.png" alt="">
+                      <span>3 articles</span>
+                    </div>
+                    <p>Sous-total <b>22,50 €</b></p>
+                    <p>Livraison <b class="free">Gratuite</b></p>
+                    <p class="tot">Total <b>22,50 €</b></p>
+                  </div>
+                  <div class="s-btn">Payer 22,50 €</div>
+                  <p class="c-safe"><i class="fa-solid fa-lock"></i> Paiement 100 % sécurisé</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container section" id="blog">
+      <div class="head news-head">
+        <h2>Dernières actualités</h2>
+
+      </div>
+
+      <div class="nx" id="nx" tabindex="0" role="region" aria-roledescription="carrousel"
+        aria-label="Sélection d'actualités">
+        <div class="nx-stage" id="nxStage"></div>
+
+        <div class="nx-list">
+          <p class="nx-title">À la une <span class="count" id="newsCount"></span></p>
+          <ul id="nxList"></ul>
+          <a href="blog.html" class="nx-more">Découvrir toutes les actualités <i aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-card">
+
+      <!-- Décors (images à fournir, voir plus bas) -->
+      <img class="deco deco-leaf" src="./images/footer-leaf.png" alt="" aria-hidden="true">
+      <img class="deco deco-left" src="./images/footer-left.png" alt="" aria-hidden="true">
+      <img class="deco deco-right" src="./images/footer-right.png" alt="" aria-hidden="true">
+
+      <div class="f-grid">
+
+        <!-- Marque -->
+        <div class="f-brand">
+          <a href="/" class="f-logo" aria-label="Delicacy Organic, accueil">
+            <img src="./images/logo.png" alt="" width="52" height="52">
+            <span>Nature<small>Shop</small></span>
+          </a>
+          <address>Rue de la Ferme,<br>Cotonou, Bénin</address>
+          <div class="social">
+            <a href="#" class="on" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Google+"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Catégories -->
+        <div class="f-col">
+          <h4>Catégories</h4>
+          <a href="#">Fruits &amp; légumes</a>
+          <a href="#">Produits laitiers</a>
+          <a href="#">Épicerie</a>
+          <a href="#">Boissons</a>
+          <a href="#">Viandes</a>
+        </div>
+
+        <!-- Liens utiles -->
+        <div class="f-col">
+          <h4>Liens utiles</h4>
+          <a href="#">Paiement &amp; taxes</a>
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Mon compte</a>
+          <a href="#">Politique de retour</a>
+          <a href="#">Réductions</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="f-col f-news">
+          <h4>Newsletter</h4>
+          <p class="f-hint">Profitez de 20 % de réduction sur tous les produits dès votre première commande.</p>
+
+          <form id="news">
+            <svg class="mail" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="3" fill="#6cb33f" />
+              <path d="m4 8 8 5 8-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input type="email" id="email" placeholder="Votre adresse e-mail…" required
+              aria-label="Votre adresse e-mail">
+            <button type="submit" aria-label="S'inscrire">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
+          </form>
+          <p id="newsMsg" role="status"></p>
+
+          <ul class="f-contact">
+            <li>T : +229 01 00 00 00 00</li>
+            <li>E : contact@delicacy.bj</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Barre du bas -->
+    <div class="f-bottom">
+      <p>© 2026 Delicacy Store</p>
+      <nav aria-label="Mentions légales">
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions générales</a>
+        <a href="#">Cookies</a>
+      </nav>
+      <div class="pay" aria-label="Moyens de paiement">
+        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+        <i class="fab fa-cc-paypal" title="PayPal"></i>
+        <i class="fab fa-cc-amex" title="American Express"></i>
+        <i class="fab fa-bitcoin" title="Bitcoin"></i>
+        <i class="fab fa-cc-visa" title="Visa"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
