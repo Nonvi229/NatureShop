@@ -4,26 +4,26 @@
 
 /* ===== Données ===== */
 const categories = [
-  { n: 'Fruits', c: 22, i: '🍇', bg: '#fff0ec' },
-  { n: 'Légumes', c: 32, i: '🥬', bg: '#eaf6e1' },
-  { n: 'Boissons', c: 12, i: '🧃', bg: '#fff3e0' },
-  { n: 'Noix fraîches', c: 72, i: '🥜', bg: '#eef0fb' },
-  { n: 'Épices', c: 25, i: '🌶️', bg: '#f7f4df' }
+  { n: 'Fruits',    c: 22, i: '🍇', img: 'rayons/rayon-fruits.png', bg: '#fff0ec' },
+  { n: 'Légumes',   c: 32, i: '🥬', img: 'rayons/rayon-legumes.png', bg: '#eaf6e1' },
+  { n: 'Viande',    c: 14, i: '🥩', img: 'rayons/rayon-viandes.png', bg: '#fdeceb' },
+  { n: 'Boissons',  c: 12, i: '🧃', img: 'rayons/rayon-jus.png', bg: '#fff3e0' },
+  { n: 'Épicerie',  c: 72, i: '🍯', img: 'rayons/rayon-epiceries.png', bg: '#f7f4df' }
 ];
 
 const products = [
-    { n: 'Tomates bio de la ferme 250g', cat: 'Légumes', i: '🍅', img: 'fruits/tomate.png', p: '7,99',  off: 25, r: 4.8, k: 124 },
-  { n: 'Viande bio de la ferme 1 kg',  cat: 'Viande',  i: '🥩', img: 'viandes/viande.png',  p: '11,00', off: 20, r: 4.6, k: 89 },
-  { n: 'Miel pur de la ferme 500g',    cat: 'Boissons', i: '🍯', p: '11,00', off: 20, r: 4.9, k: 210 },
-  { n: 'Oranges fraîches bio 500g',    cat: 'Boissons', i: '🍊', p: '11,00', off: 25, r: 4.7, k: 156 },
-  { n: 'Carottes bio 500g',            cat: 'Légumes',  i: '🥕', p: '4,50',  off: 15, r: 4.5, k: 73 },
-  { n: 'Fraises fraîches 500g',        cat: 'Légumes',img: 'fruits/fraise.png',  i: '🍓', p: '6,90',  off: 20, r: 4.8, k: 142 },
-  { n: 'Pastèque bio 1 pièce',         cat: 'Légumes',  i: '🍉', p: '7,99',  off: 10, r: 4.4, k: 58 },
-  { n: 'Thé vert bio',                 cat: 'Boissons', i: '🍵', p: '5,40',  off: 20, r: 4.6, k: 97 },
-  { n: 'Mélange de noix',              cat: 'Légumes',  i: '🥜', p: '9,20',  off: 15, r: 4.7, k: 81 },
-  { n: 'Salade fraîche',               cat: 'Légumes',  i: '🥗', p: '3,80',  off: 20, r: 4.5, k: 64 },
-  { n: 'Côtelettes de porc 1 kg',      cat: 'Viande',   i: '🍖', p: '12,50', off: 10, r: 4.3, k: 52 },
-  { n: 'Jus de fruits bio',            cat: 'Boissons', i: '🧃', p: '4,90',  off: 20, r: 4.6, k: 110 }
+  { n: 'Tomates bio de la ferme', u: '250 g', cat: 'Légumes',  i: '🍅', img: 'fruits/tomate.png',  p: '7,99',  off: 25, r: 4.8, k: 124 },
+  { n: 'Viande bio de la ferme',  u: '1 kg',  cat: 'Viande',   i: '🥩', img: 'viandes/viande.png', p: '11,00', off: 20, r: 4.6, k: 89 },
+  { n: 'Miel pur de la ferme',    u: '500 g', cat: 'Épicerie', i: '🍯', img: 'fruits/miel.png', p: '11,00', off: 20, r: 4.9, k: 210 },
+  { n: 'Oranges fraîches bio',    u: '500 g', cat: 'Fruits',   i: '🍊', img: 'fruits/orange.png', p: '11,00', off: 25, r: 4.7, k: 156 },
+  { n: 'Carottes bio',            u: '500 g', cat: 'Légumes',  i: '🥕', img: 'fruits/carotte.png', p: '4,50',  off: 15, r: 4.5, k: 73 },
+  { n: 'Fraises fraîches',        u: '500 g', cat: 'Fruits',   i: '🍓', img: 'fruits/fraise.png', p: '6,90', off: 20, r: 4.8, k: 142 },
+  { n: 'Pastèque bio',            u: 'pièce', cat: 'Fruits',   i: '🍉', img: 'fruits/pasteque.png', p: '7,99',  off: 10, r: 4.4, k: 58 },
+  { n: 'Thé vert bio',            u: '100 g', cat: 'Boissons', i: '🍵', img: 'fruits/the-vert.png', p: '5,40',  off: 20, r: 4.6, k: 97 },
+  { n: 'Mélange de noix',         u: '250 g', cat: 'Épicerie', i: '🥜', img: 'noix/noix.png', p: '9,20',  off: 15, r: 4.7, k: 81 },
+  { n: 'Salade fraîche',          u: 'pièce', cat: 'Légumes',  i: '🥗', img: 'legumes/salade.png',  p: '3,80',  off: 20, r: 4.5, k: 64 },
+  { n: 'Côtelettes de porc',      u: '1 kg',  cat: 'Viande',   i: '🍖', img: 'viandes/cotelet-porc.png', p: '12,50', off: 10, r: 4.3, k: 52 },
+  { n: 'Jus de fruits bio',       u: '1 L',   cat: 'Boissons', i: '🧃', img: 'fruits/jus.png', p: '4,90',  off: 20, r: 4.6, k: 110 }
 ];
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -39,40 +39,69 @@ document.body.insertAdjacentHTML('afterbegin', `
     </symbol>
   </svg>`);
 
-const star = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>';
-const stars = r => Array.from({ length: 5 }, (_, i) => {
-  const f = Math.max(0, Math.min(1, r - i));            // part remplie de cette étoile
-  return `<span class="st">${star}<span style="width:${f * 100}%">${star}</span></span>`;
-}).join('');
-
 let cart = 0;
 
-/* ===== Catégories ===== */
-$('#cats').innerHTML = categories.map(c =>
-  `<div class="cat" style="background:${c.bg}"><div class="ic">${c.i}</div><b>${c.n}</b><small>${c.c} articles</small></div>`
-).join('');
+/* ===== Catégories : accordéon de rayons ===== */
+$('#cats').innerHTML = categories.map(c => {
+  const sample = products.filter(p => p.cat === c.n).slice(0, 3).map(p => p.n).join(', ');
+  return `
+  <a href="#popular" class="cat" data-f="${c.n}" style="--bg:${c.bg}">
+    <span class="cat-n" aria-hidden="true">${c.c}</span>
+    ${c.img ? `<img class="ic" src="./images/${c.img}" alt="" width="200" height="200" loading="lazy">` : `<span class="ic" aria-hidden="true">${c.i}</span>`}
+    <b class="cat-name">${c.n}</b>
+    <span class="cat-more"><span>
+      <span class="cat-count">${c.c} articles</span>
+      <span class="cat-ex">${sample}</span>
+      <span class="cat-go">Voir les produits</span>
+    </span></span>
+  </a>`;
+}).join('');
+
+const catEls = [...document.querySelectorAll('#cats .cat')];
+const setCat = el => catEls.forEach(x => x.classList.toggle('on', x === el));
+catEls.forEach(el => {
+  el.addEventListener('pointerenter', () => setCat(el));
+  el.addEventListener('focus', () => setCat(el));
+});
+setCat(catEls[0]);
 
 /* ===== Carte produit ===== */
-const card = p => `
+const CUR = '€';                        // mets 'FCFA' pour Cotonou (les prix s'afficheront sans décimales)
+const num = s => parseFloat(String(s).replace(',', '.'));
+const money = n => n.toLocaleString('fr-FR', {
+  minimumFractionDigits: CUR === 'FCFA' ? 0 : 2,
+  maximumFractionDigits: CUR === 'FCFA' ? 0 : 2
+}) + '\u00a0' + CUR;
+const tint = cat => (categories.find(c => c.n === cat) || {}).bg || '#f4f4f0';
+
+const card = p => {
+  const now = num(p.p);                              // prix affiché (déjà remisé)
+  const was = now / (1 - p.off / 100);               // ancien prix, barré
+  return `
   <article class="card">
-    <span class="off">-${p.off}%</span>
-    <button type="button" class="fav" aria-label="Ajouter aux favoris" aria-pressed="false">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
-</button>
-    <div class="pic">${p.img
-      ? `<img src="./images/${p.img}" alt="${p.n}" width="600" height="450" loading="lazy" data-emo="${p.i}">`
-      : `<span class="emo" aria-hidden="true">${p.i}</span>`}</div>
-
-    <small>${p.cat}</small>
-    <h3>${p.n}</h3>
-
-    <div class="rate" role="img" aria-label="Note ${p.r} sur 5, ${p.k} avis">
-      <span class="stars" aria-hidden="true">${stars(p.r)}</span>
-      <b>${p.r.toFixed(1).replace('.', ',')}</b>
-      <span class="cnt">Stock disponible (${p.k})</span>
+    <div class="media" style="--tint:${tint(p.cat)}">
+      <span class="off">−${p.off}&nbsp;%</span>
+      <button type="button" class="fav" aria-label="Ajouter ${p.n} aux favoris" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
+      </button>
+      <div class="pic">${p.img
+        ? `<img src="./images/${p.img}" alt="${p.n}" loading="lazy" data-emo="${p.i}">`
+        : `<span class="emo" aria-hidden="true">${p.i}</span>`}</div>
     </div>
 
-    <div class="price">${p.p} £<small>/kg</small></div>
+    <div class="info">
+      <p class="tag">${p.cat}</p>
+      <h3>${p.n}</h3>
+      <p class="unit">${p.u || ''}</p>
+
+      <div class="rate" role="img" aria-label="Note ${p.r} sur 5, ${p.k} avis">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>
+        <b>${p.r.toFixed(1).replace('.', ',')}</b>
+        <span>(${p.k} avis)</span>
+      </div>
+
+      <div class="price"><b>${money(now)}</b><s aria-label="Ancien prix">${money(was)}</s></div>
+    </div>
 
     <div class="buy">
       <div class="qty" role="group" aria-label="Quantité">
@@ -87,25 +116,20 @@ const card = p => `
       </button>
     </div>
   </article>`;
-
-/* ===== Meilleures ventes (carrousel) ===== */
-let start = 0;
-const renderBest = () => {
-  const list = [...products.slice(start), ...products.slice(0, start)].slice(0, 4);
-  $('#bestGrid').innerHTML = list.map(card).join('');
 };
-$('#nextB').onclick = () => { start = (start + 1) % products.length; renderBest(); };
-$('#prevB').onclick = () => { start = (start - 1 + products.length) % products.length; renderBest(); };
-renderBest();
 
 /* ===== Produits populaires + filtres ===== */
 /* ===== Produits populaires + filtres animés ===== */
 const popGrid = $('#popGrid'), tabs = $('#tabs');
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-let popFilter = 'all', popToken = 0;
+let popFilter = 'best', popToken = 0;
 
 const renderPop = (f, animate = false) => {
-  const list = products.filter(p => f === 'all' || p.cat === f).slice(0, 8);
+  const list = (f === 'best'
+    ? [...products].sort((a, b) => b.k - a.k)      // les plus achetés / les plus notés
+    : products.filter(p => p.cat === f)
+  ).slice(0, 8);
+
   popGrid.innerHTML = list.map(card).join('');
   popGrid.querySelectorAll('.card').forEach((c, i) => {
     c.style.setProperty('--i', i);
@@ -148,6 +172,13 @@ const swapPop = f => {
   }, 280);
 };
 
+/* Catégories et offres : un clic active l'onglet correspondant */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-f]'); if (!a) return;
+  const tab = tabs.querySelector(`[data-f="${a.dataset.f}"]`);
+  if (tab) tab.click();
+});
+
 tabs.addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   tabs.querySelectorAll('button').forEach(x => {
@@ -158,7 +189,7 @@ tabs.addEventListener('click', e => {
   swapPop(b.dataset.f);
 });
 
-renderPop('all');
+renderPop('best');
 
 /* ===== Animation : le produit vole vers le panier ===== */
 const fly = (from, to, done) => {
@@ -247,22 +278,6 @@ document.addEventListener('error', e => {
   emo.textContent = im.dataset.emo || '🛒';
   im.replaceWith(emo);
 }, true);
-
-
-/* ===== Compteurs animés ===== */
-const io = new IntersectionObserver(es => es.forEach(en => {
-  if (!en.isIntersecting) return;
-  document.querySelectorAll('[data-n]').forEach(el => {
-    const max = +el.dataset.n; let v = 0;
-    const t = setInterval(() => {
-      v = Math.min(max, v + Math.ceil(max / 50));
-      el.textContent = v.toLocaleString('fr-FR');
-      if (v >= max) clearInterval(t);
-    }, 25);
-  });
-  io.disconnect();
-}), { threshold: .4 });
-io.observe($('.stats'));
 
 /* ===== Avis clients : mur animé ===== */
 const reviews = [
@@ -545,4 +560,12 @@ if (appSec) {
   new IntersectionObserver(([e], obs) => {
     if (e.isIntersecting) { appSec.classList.add('in'); obs.disconnect(); }
   }, { threshold: .25 }).observe(appSec);
+}
+
+/* ===== À propos : le parcours se trace à l'apparition ===== */
+const farmSec = $('#about');
+if (farmSec) {
+  new IntersectionObserver(([e], obs) => {
+    if (e.isIntersecting) { farmSec.classList.add('in'); obs.disconnect(); }
+  }, { threshold: .3 }).observe(farmSec);
 }

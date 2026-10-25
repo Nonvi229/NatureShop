@@ -11,9 +11,6 @@
     href="https://fonts.googleapis.com/css2?family=Michroma&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -94,7 +91,7 @@
           <p class="hx-lead hx-r" style="--d:6">Fruits, légumes et épices cueillis cette semaine, sans intermédiaire.
             Commandez avant midi, recevez dans la journée.</p>
           <div class="hx-cta hx-r" style="--d:7">
-            <a href="#best" class="btn btn-green hx-btn">Voir les meilleures ventes</a>
+            <a href="#popular" class="btn btn-green hx-btn">Voir les meilleures ventes</a>
             <a href="#about" class="btn hx-ghost">Nos agriculteurs</a>
           </div>
           <ul class="hx-proof hx-r" style="--d:8">
@@ -128,91 +125,105 @@
     </section>
 
 
-    <section class="container perks">
-      <div>
-        <div class="img">
-          <img src="./images/panier-emplete.png" alt="panier">
-        </div>
-        <div>🧺 Produits de la ferme bio</div>
-      </div>
-      <div>
-        <div class="img">
-          <img src="./images/panier-emplete.jpg" alt="panier">
-        </div>
-        <div>🚚 Livraison gratuite</div>
-      </div>
-      <div>
-        <div class="img">
-          <img src="./images/panier-emplete.png" alt="panier">
-        </div>
-        <div>🎁 Promo de la semaine</div>
-      </div>
-      <div>
-        <div class="img">
-          <img src="./images/panier-emplete.png" alt="panier">
-        </div>
-        <div>🏷️ -20% sur tous les légumes</div>
-      </div>
-    </section>
+<ul class="container guard" aria-label="Nos engagements">
+  <li><i class="fa-solid fa-leaf" aria-hidden="true"></i><span><b>100 % bio</b>Fermes certifiées</span></li>
+  <li><i class="fa-solid fa-truck-fast" aria-hidden="true"></i><span><b>Livraison gratuite</b>Dès la première commande</span></li>
+  <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span><b>Livré dans la journée</b>Commande avant midi</span></li>
+  <li><i class="fa-solid fa-lock" aria-hidden="true"></i><span><b>Paiement sécurisé</b>Carte, Mobile Money</span></li>
+</ul>
 
-    <section class="container section">
-      <div class="head">
-        <h2>Nos catégories <em>les plus populaires</em></h2><a href="#" class="btn btn-green sm">Tout voir</a>
-      </div>
-      <div class="cats" id="cats"></div>
-    </section>
+<section class="container section" id="rayons" aria-labelledby="cats-title">
+  <div class="head">
+    <h2 id="cats-title">Parcourir par rayon</h2>
+    <a href="#popular" class="btn btn-green sm">Tout voir</a>
+  </div>
+  <div class="cats" id="cats"></div>
+</section>
 
-    <section class="container banners">
-      <div class="banner b-green"><small>Jusqu'à 30% de remise</small>
-        <h3>Récolté dans nos jardins</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🥬</span>
-      </div>
-      <div class="banner b-lime"><small>Jusqu'à 20% de remise</small>
-        <h3>Changez votre régime</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🥗</span>
-      </div>
-      <div class="banner b-orange"><small>Naturel et frais</small>
-        <h3>Légumes 100% bio</h3><a href="#" class="btn btn-white sm">Voir tout</a><span>🧃</span>
-      </div>
-    </section>
+<section class="container deals" aria-label="Offres du moment">
 
-    <section class="container section" id="best">
-      <div class="head">
-        <h2>Meilleures ventes</h2>
-        <div class="arrows"><button id="prevB" aria-label="Précédent">←</button><button id="nextB"
-            aria-label="Suivant">→</button></div>
-      </div>
-      <div class="grid4" id="bestGrid"></div>
-    </section>
+  <a class="deal deal-main" href="#popular" data-f="Légumes">
+    <small>Jusqu'à</small>
+    <b class="deal-big">−25&nbsp;%</b>
+    <h3>Fruits et légumes de la semaine</h3>
+    <p>Cueillis cette semaine dans nos fermes partenaires.</p>
+    <span class="deal-cta">Voir les légumes
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+    <img src="./images/recolte.png" alt="" width="320" height="320">
+  </a>
 
-    <section class="container about" id="about">
-      <div class="about-img">🥕🍅🥦</div>
-      <div>
-        <p class="kicker">À propos</p>
-        <h2>Nous travaillons avec des agriculteurs certifiés</h2>
-        <p>Organic Foods est une entreprise familiale qui fournit supermarchés et cafés en produits frais, aliments
-          biologiques, soins, cosmétiques et produits ménagers.</p>
-        <a href="#" class="btn btn-green">En savoir plus</a>
-      </div>
-    </section>
+  <a class="deal deal-sm deal-navy" href="#popular" data-f="Viande">
+    <small>Jusqu'à</small>
+    <b class="deal-big">−20&nbsp;%</b>
+    <h3>Viande bio de la ferme</h3>
+    <span class="deal-cta">Voir la viande</span>
+    <img src="./images/viandes/viande-sans-bg.png" alt="" width="200" height="200">
+  </a>
+
+  <a class="deal deal-sm deal-leaf" href="#popular" data-f="best">
+    <small>Première commande</small>
+    <b class="deal-big">Gratuite</b>
+    <h3>La livraison, chez vous dans la journée</h3>
+    <span class="deal-cta">Commander</span>
+    <img src="./images/camion-liveur.png" alt="" width="200" height="200">
+  </a>
+
+</section>
 
     <section class="gray" id="popular">
-      <div class="container section">
-        <h2 class="center">Produits les plus populaires</h2>
-        <div class="tabs" id="tabs">
-          <button class="active" data-f="all">Tous</button><button data-f="Légumes">Légumes</button>
-          <button data-f="Viande">Viande</button><button data-f="Boissons">Boissons</button>
-        </div>
-        <div class="grid4" id="popGrid"></div>
-      </div>
-    </section>
+  <div class="container section">
+    <h2 class="center">Nos produits</h2>
+    <div class="tabs" id="tabs" role="group" aria-label="Filtrer les produits">
+      <button class="active" data-f="best" aria-pressed="true">Meilleures ventes</button>
+      <button data-f="Fruits" aria-pressed="false">Fruits</button>
+      <button data-f="Légumes" aria-pressed="false">Légumes</button>
+      <button data-f="Viande" aria-pressed="false">Viande</button>
+      <button data-f="Boissons" aria-pressed="false">Boissons</button>
+      <button data-f="Épicerie" aria-pressed="false">Épicerie</button>
+    </div>
+    <div class="grid4" id="popGrid"></div>
+  </div>
+</section>
 
-    <section class="stats">
-      <div class="container stats-in">
-        <div><b data-n="1800">0</b>+<span>Clients satisfaits</span></div>
-        <div><b data-n="362">0</b>+<span>Produits actifs</span></div>
-        <div><b data-n="30">0</b>+<span>Catégories</span></div>
-        <div><b data-n="1800">0</b>+<span>Récompenses</span></div>
-      </div>
-    </section>
+
+  <section class="container farm" id="about" aria-labelledby="farm-title">
+  <div class="farm-head">
+    <h2 id="farm-title">Du champ à votre porte, le même jour</h2>
+    <div>
+      <p>NatureShop travaille directement avec des agriculteurs certifiés bio. Pas d'entrepôt, pas d'intermédiaire : ce que vous recevez a été cueilli le matin même.</p>
+      <a href="#popular" class="btn btn-white">Voir les produits de saison</a>
+    </div>
+  </div>
+
+  <ol class="farm-path">
+    <li style="--i:0">
+      <span class="farm-dot"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+      <b class="farm-time">5 h</b>
+      <h3>Cueillette</h3>
+      <p>Les agriculteurs récoltent à la main, au lever du jour.</p>
+    </li>
+    <li style="--i:1">
+      <span class="farm-dot"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
+      <b class="farm-time">8 h</b>
+      <h3>Contrôle</h3>
+      <p>Chaque lot est trié et vérifié : fraîcheur, calibre, certification bio.</p>
+    </li>
+    <li style="--i:2">
+      <span class="farm-dot"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></span>
+      <b class="farm-time">11 h</b>
+      <h3>Départ</h3>
+      <p>Mise en caisse et chargement directement à la ferme.</p>
+    </li>
+    <li style="--i:3">
+      <span class="farm-dot"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+      <b class="farm-time">14 h</b>
+      <h3>Chez vous</h3>
+      <p>Livré dans la journée pour toute commande passée avant midi.</p>
+    </li>
+  </ol>
+</section>
+
 
     <section class="container section rv" id="avis" aria-labelledby="rv-title">
       <div class="rv-side">
